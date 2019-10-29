@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1CD33A2367EC14006C171F /* CommentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CD3342367EC14006C171F /* CommentPresenter.swift */; };
+		CF1CD33B2367EC14006C171F /* CommentWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CD3352367EC14006C171F /* CommentWorker.swift */; };
+		CF1CD33C2367EC14006C171F /* CommentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CD3362367EC14006C171F /* CommentRouter.swift */; };
+		CF1CD33D2367EC14006C171F /* CommentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CD3372367EC14006C171F /* CommentModels.swift */; };
+		CF1CD33E2367EC14006C171F /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CD3382367EC14006C171F /* CommentViewController.swift */; };
+		CF1CD33F2367EC14006C171F /* CommentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CD3392367EC14006C171F /* CommentInteractor.swift */; };
+		CF1CD34523688A39006C171F /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CD34423688A39006C171F /* CommentCell.swift */; };
 		CFF12B1923655C6200D20ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF12B1823655C6200D20ABC /* AppDelegate.swift */; };
 		CFF12B2223655C6500D20ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF12B2123655C6500D20ABC /* Assets.xcassets */; };
 		CFF12B2523655C6500D20ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF12B2323655C6500D20ABC /* LaunchScreen.storyboard */; };
@@ -19,12 +26,19 @@
 		CFF12B4023655FB700D20ABC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF12B3C23655FB700D20ABC /* NetworkManager.swift */; };
 		CFF12B4123655FB700D20ABC /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF12B3E23655FB700D20ABC /* Comment.swift */; };
 		CFF12B4223655FB700D20ABC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF12B3F23655FB700D20ABC /* Post.swift */; };
-		CFF12B452365611900D20ABC /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF12B442365611900D20ABC /* PostView.swift */; };
+		CFF12B452365611900D20ABC /* CommonTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF12B442365611900D20ABC /* CommonTableView.swift */; };
 		CFF12B482365626100D20ABC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF12B472365626100D20ABC /* UIView.swift */; };
 		CFF12B4A236564C200D20ABC /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF12B49236564C200D20ABC /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF1CD3342367EC14006C171F /* CommentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentPresenter.swift; sourceTree = "<group>"; };
+		CF1CD3352367EC14006C171F /* CommentWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentWorker.swift; sourceTree = "<group>"; };
+		CF1CD3362367EC14006C171F /* CommentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRouter.swift; sourceTree = "<group>"; };
+		CF1CD3372367EC14006C171F /* CommentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModels.swift; sourceTree = "<group>"; };
+		CF1CD3382367EC14006C171F /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		CF1CD3392367EC14006C171F /* CommentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInteractor.swift; sourceTree = "<group>"; };
+		CF1CD34423688A39006C171F /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		CFF12B1523655C6200D20ABC /* cleanSwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cleanSwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF12B1823655C6200D20ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF12B2123655C6500D20ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,7 +53,7 @@
 		CFF12B3C23655FB700D20ABC /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CFF12B3E23655FB700D20ABC /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		CFF12B3F23655FB700D20ABC /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		CFF12B442365611900D20ABC /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		CFF12B442365611900D20ABC /* CommonTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTableView.swift; sourceTree = "<group>"; };
 		CFF12B472365626100D20ABC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CFF12B49236564C200D20ABC /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +69,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF1CD3402367EDA9006C171F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF1CD34423688A39006C171F /* CommentCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF1CD3432367EDDB006C171F /* Common Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFF12B442365611900D20ABC /* CommonTableView.swift */,
+			);
+			path = "Common Views";
+			sourceTree = "<group>";
+		};
 		CFF12B0C23655C6200D20ABC = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +104,7 @@
 		CFF12B1723655C6200D20ABC /* cleanSwiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				CF1CD3432367EDDB006C171F /* Common Views */,
 				CFF12B462365625300D20ABC /* Extensions */,
 				CFF12B3B23655FB700D20ABC /* Network */,
 				CFF12B2C23655CF000D20ABC /* Scenes */,
@@ -111,6 +142,13 @@
 		CFF12B2E23655D0200D20ABC /* Comment */ = {
 			isa = PBXGroup;
 			children = (
+				CF1CD3402367EDA9006C171F /* Views */,
+				CF1CD3342367EC14006C171F /* CommentPresenter.swift */,
+				CF1CD3352367EC14006C171F /* CommentWorker.swift */,
+				CF1CD3362367EC14006C171F /* CommentRouter.swift */,
+				CF1CD3372367EC14006C171F /* CommentModels.swift */,
+				CF1CD3382367EC14006C171F /* CommentViewController.swift */,
+				CF1CD3392367EC14006C171F /* CommentInteractor.swift */,
 			);
 			path = Comment;
 			sourceTree = "<group>";
@@ -136,7 +174,6 @@
 		CFF12B432365610500D20ABC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CFF12B442365611900D20ABC /* PostView.swift */,
 				CFF12B49236564C200D20ABC /* PostCell.swift */,
 			);
 			path = Views;
@@ -222,17 +259,24 @@
 			files = (
 				CFF12B4023655FB700D20ABC /* NetworkManager.swift in Sources */,
 				CFF12B4223655FB700D20ABC /* Post.swift in Sources */,
+				CF1CD33C2367EC14006C171F /* CommentRouter.swift in Sources */,
 				CFF12B4A236564C200D20ABC /* PostCell.swift in Sources */,
+				CF1CD33F2367EC14006C171F /* CommentInteractor.swift in Sources */,
+				CF1CD33D2367EC14006C171F /* CommentModels.swift in Sources */,
 				CFF12B3A23655D7300D20ABC /* PostInteractor.swift in Sources */,
+				CF1CD33A2367EC14006C171F /* CommentPresenter.swift in Sources */,
 				CFF12B1923655C6200D20ABC /* AppDelegate.swift in Sources */,
+				CF1CD33E2367EC14006C171F /* CommentViewController.swift in Sources */,
 				CFF12B482365626100D20ABC /* UIView.swift in Sources */,
 				CFF12B3823655D7300D20ABC /* PostModels.swift in Sources */,
 				CFF12B3923655D7300D20ABC /* PostViewController.swift in Sources */,
 				CFF12B4123655FB700D20ABC /* Comment.swift in Sources */,
+				CF1CD33B2367EC14006C171F /* CommentWorker.swift in Sources */,
+				CF1CD34523688A39006C171F /* CommentCell.swift in Sources */,
 				CFF12B3523655D7300D20ABC /* PostPresenter.swift in Sources */,
 				CFF12B3623655D7300D20ABC /* PostWorker.swift in Sources */,
 				CFF12B3723655D7300D20ABC /* PostRouter.swift in Sources */,
-				CFF12B452365611900D20ABC /* PostView.swift in Sources */,
+				CFF12B452365611900D20ABC /* CommonTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,16 +13,23 @@
 import UIKit
 
 protocol PostPresentationLogic {
-  func presentInitialData(response: PostScene.Load.Response)
+    func presentInitialData(response: PostScene.Load.Response)
+    func presentComments(response: PostScene.Comments.Response)
 }
 
 class PostPresenter: PostPresentationLogic {
-  weak var viewController: PostDisplayLogic?
-  
-  // MARK: Do something
-  
-  func presentInitialData(response: PostScene.Load.Response) {
-    let viewModel = PostScene.Load.ViewModel(posts: response.posts)
-    viewController?.displayInitialData(viewModel: viewModel)
-  }
+    weak var viewController: PostDisplayLogic?
+    
+    // MARK: Do something
+    
+    func presentInitialData(response: PostScene.Load.Response) {
+        let viewModel = PostScene.Load.ViewModel(posts: response.posts)
+        viewController?.displayInitialData(viewModel: viewModel)
+    }
+    
+    func presentComments(response: PostScene.Comments.Response) {
+        let viewModel = PostScene.Comments.ViewModel()
+        //Realizar cambio de viewcontroller
+        viewController?.displayComments(viewModel: viewModel)
+    }
 }

@@ -23,7 +23,10 @@ class NetworkManager {
                 if let data = data {
                     let decoder = JSONDecoder()
                     do {
-                        let decodedPosts = try decoder.decode([Post].self, from: data)
+                        //let decodedPosts = try decoder.decode([Post].self, from: data)
+                        let decodedPosts = try decoder.decode([Post].self, from: data).filter({ post -> Bool in
+                            return post.userId != -1
+                        })
                         completionHandler(decodedPosts)
                     } catch {
                         completionHandler(arrayPosts)

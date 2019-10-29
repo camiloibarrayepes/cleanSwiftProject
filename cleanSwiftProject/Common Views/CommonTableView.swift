@@ -8,7 +8,8 @@
 
 import UIKit
 
-class PostView: UIView {
+class CommonTableView: UIView {
+    
     let tableView: UITableView
     
     override init(frame: CGRect) {

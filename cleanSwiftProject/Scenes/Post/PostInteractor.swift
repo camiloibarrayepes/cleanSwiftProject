@@ -12,30 +12,38 @@
 
 import UIKit
 
-protocol PostBusinessLogic
-{
-  func doLoadInitialData(request: PostScene.Load.Request)
+protocol PostBusinessLogic {
+    func doLoadInitialData(request: PostScene.Load.Request)
+    func doLoadComments(request: PostScene.Comments.Request)
 }
 
-protocol PostDataStore
-{
-  //var name: String { get set }
+protocol PostDataStore {
+    //Protocolo implementado por el interactor que va a almacenar y transportar data
+    //que va a hacer transportada o recibida a otro viewcontroller
+    var postId: Int { get set }
 }
 
 class PostInteractor: PostBusinessLogic, PostDataStore
 {
-  var presenter: PostPresentationLogic?
-  var worker: PostWorker?
-  //var name: String = ""
-  
-  // MARK: Do something
-  
-  func doLoadInitialData(request: PostScene.Load.Request)
-  {
-    worker = PostWorker()
-    worker?.fetchPosts(completionHandler: { posts in
-        let response = PostScene.Load.Response(posts: posts)
-        self.presenter?.presentInitialData(response: response)
-    })
-  }
+    var presenter: PostPresentationLogic?
+    var worker: PostWorker?
+    var postId: Int = 0
+    
+    // MARK: Do something
+    
+    func doLoadInitialData(request: PostScene.Load.Request)
+    {
+        worker = PostWorker()
+        worker?.fetchPosts(completionHandler: { posts in
+            let response = PostScene.Load.Response(posts: posts)
+            self.presenter?.presentInitialData(response: response)
+        })
+    }
+    
+    func doLoadComments(request: PostScene.Comments.Request) {
+        let post = request.post
+        postId = post.id
+        let response = PostScene.Comments.Response()
+        presenter?.presentComments(response: response)
+    }
 }
